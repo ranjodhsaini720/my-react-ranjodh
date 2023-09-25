@@ -305,7 +305,7 @@ nav .nav-link:hover {
 footer{
     background-color: #262626;
     color: white;
-    height: 450px;
+    height: auto;
 }
 
 @media (max-width:991.98px) {
