@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -21,13 +21,12 @@ import h9 from "../assets/image/h9.jpg"
 export default function home() {
     return (
         <>
-            <section className='swiper'>
-
+            <section className='swiper' id='home'>
                 <Swiper
                     spaceBetween={30}
                     centeredSlides={true}
                     autoplay={{
-                        delay: 2500,
+                        delay: 250000,
                         disableOnInteraction: false,
                     }}
                     pagination={{
@@ -46,7 +45,7 @@ export default function home() {
                                         and frindly Staff Book your table now</p>
                                 </div>
                                 <Row className='g-2 justify-content-center'>
-                                    <Col lg={3} md={6}>
+                                    <Col lg={3} md={6} sm={6}>
                                         <div className='opt'>
                                             <select name="" id="" className='border rounded-0 p-3 w-100'>
                                                 <option value="">1 Person</option>
@@ -60,12 +59,12 @@ export default function home() {
                                             </select>
                                         </div>
                                     </Col>
-                                    <Col lg={3} md={6}>
+                                    <Col lg={3} md={6} sm={6}>
                                         <div className='opt'>
                                             <input type="date" placeholder='' className='border rounded-0 w-100' style={{ padding: '14px' }} />
                                         </div>
                                     </Col>
-                                    <Col lg={3} md={6}>
+                                    <Col lg={3} md={6} sm={6}>
                                         <div className='opt'>
                                             <select name="" id="" className='border rounded-0 p-3 w-100'>
                                                 <option value="">7.00 pm</option>
@@ -79,7 +78,7 @@ export default function home() {
                                             </select>
                                         </div>
                                     </Col>
-                                    <Col lg={3} md={6}>
+                                    <Col lg={3} md={6} sm={6}>
                                         <div className='opt'>
                                             <button className='butn w-100'>BOOK A TABLE</button>
                                         </div>
@@ -191,7 +190,6 @@ export default function home() {
                         </div>
                     </SwiperSlide>
                 </Swiper>
-
             </section>
 
             {/* section end  */}
@@ -274,7 +272,7 @@ export default function home() {
 
             {/* section end  */}
 
-            <section className='p-100'>
+            <section className='p-100 text-center text-md-start'>
                 <Container>
                     <Row className='g-3 justify-content-center align-items-center'>
                         <Col lg={6} md={6}>
@@ -296,9 +294,9 @@ export default function home() {
 
             {/* section end  */}
 
-            <section className='amazing d-flex align-items-center justify-content-center p-100'>
+            <section className='amazing d-flex align-items-center justify-content-center p-100 text-center text-md-start'>
                 <Container>
-                    <Row className='g-5 justify-content-center'>
+                    <Row className='g-lg-5 justify-content-center'>
                         <Col lg={6} md={6}>
                             <div className='py-4'>
                                 <div className='d-flex align-items-center'>
@@ -365,7 +363,7 @@ export default function home() {
                         <Col lg={4} md={6}>
                             <div>
                                 <img src={h7} alt="" className='w-100' />
-                                <div className='text-start pt-4'>
+                                <div className='text-center text-md-start pt-4'>
                                     <h4>Easy Customizable</h4>
                                     <p className='pera py-3'>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper.</p>
                                 </div>
@@ -374,7 +372,7 @@ export default function home() {
                         <Col lg={4} md={6}>
                             <div>
                                 <img src={h8} alt="" className='w-100' />
-                                <div className='text-start pt-4'>
+                                <div className='text-center text-md-start pt-4'>
                                     <h4>Easy Customizable</h4>
                                     <p className='pera py-3'>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper.</p>
                                 </div>
@@ -383,7 +381,7 @@ export default function home() {
                         <Col lg={4} md={6}>
                             <div>
                                 <img src={h9} alt="" className='w-100' />
-                                <div className='text-start pt-4'>
+                                <div className='text-center text-md-start pt-4'>
                                     <h4>Easy Customizable</h4>
                                     <p className='pera py-3'>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper.</p>
                                 </div>
@@ -400,86 +398,86 @@ export default function home() {
                         <Col lg={6}>
                             <Row className='g-4'>
                                 <Col lg={12}>
-                                    <div className='bg-white p-2 p-md-5'>
+                                    <div className='bg-white p-2 p-md-5 text-center text-md-start'>
                                         <h2 className='display-6 py-3'>Easy Dinner</h2>
-                                        <div className='d-flex align-items-center py-4'>
-                                            <div className='text-start'>
+                                        <div className='d-block d-md-flex align-items-center py-4'>
+                                            <div className=''>
                                                 <h4 className='fw-bold'>Charcuterie Platter</h4>
                                                 <p className='pera'>Proscuitto / Cheese / Liver / pate / Olives</p>
                                             </div>
-                                            <h2 className='ms-auto'><sup>$</sup>59</h2>
+                                            <h2 className='ms-auto ms-md-auto'><sup>$</sup>59</h2>
                                         </div>
-                                        <div className='d-flex align-items-center py-4'>
-                                            <div className='text-start'>
+                                        <div className='d-block d-md-flex align-items-center py-4'>
+                                            <div className=''>
                                                 <h4 className='fw-bold'>Sea & Brie Dip</h4>
                                                 <p className='pera'>Hand / chopped / beef / Tenderloin / Spices </p>
                                             </div>
-                                            <h2 className='ms-auto'><sup>$</sup>22</h2>
+                                            <h2 className='ms-auto ms-md-auto'><sup>$</sup>22</h2>
                                         </div>
-                                        <div className='d-flex align-items-center py-4'>
-                                            <div className='text-start'>
+                                        <div className='d-block d-md-flex align-items-center py-4'>
+                                            <div className=''>
                                                 <h4 className='fw-bold'>Steak Tartare</h4>
                                                 <p className='pera'>Hand / chopped / beef / Tenderloin / Spices</p>
                                             </div>
-                                            <h2 className='ms-auto'><sup>$</sup>14</h2>
+                                            <h2 className='ms-auto ms-md-auto'><sup>$</sup>14</h2>
                                         </div>
-                                        <div className='d-flex align-items-center py-4'>
-                                            <div className='text-start'>
+                                        <div className='d-block d-md-flex align-items-center py-4'>
+                                            <div className=''>
                                                 <h4 className='fw-bold'>Fried Calamari</h4>
                                                 <p className='pera'>Fried / Semolina / flour / Caper / remoulade</p>
                                             </div>
-                                            <h2 className='ms-auto'><sup>$</sup>9</h2>
+                                            <h2 className='ms-auto ms-md-auto'><sup>$</sup>9</h2>
                                         </div>
-                                        <div className='d-flex align-items-center py-4'>
-                                            <div className='text-start'>
+                                        <div className='d-block d-md-flex align-items-center py-4'>
+                                            <div className=''>
                                                 <h4 className='fw-bold'>French Onion Soup</h4>
                                                 <p className='pera'>Caramelized / onions / Beef / broth / Melted / Swiss</p>
                                             </div>
-                                            <h2 className='ms-auto'><sup>$</sup>9</h2>
+                                            <h2 className='ms-auto ms-md-auto'><sup>$</sup>9</h2>
                                         </div>
                                     </div>
                                 </Col>
                                 <Col lg={12}>
-                                    <div className='bg-white p-2 p-md-5'>
+                                    <div className='bg-white p-2 p-md-5 text-center text-md-start'>
                                         <h2 className='display-6 py-3'>Chef’s special</h2>
-                                        <div className='d-flex align-items-center py-4'>
-                                            <div className='text-start'>
+                                        <div className='d-block d-md-flex align-items-center py-4'>
+                                            <div className=''>
                                                 <h4 className='fw-bold'>Charcuterie Platter</h4>
                                                 <p className='pera'>Proscuitto / Cheese / Liver / pate / Olives</p>
                                             </div>
-                                            <h2 className='ms-auto'><sup>$</sup>15</h2>
+                                            <h2 className='ms-auto ms-md-auto'><sup>$</sup>15</h2>
                                         </div>
-                                        <div className='d-flex align-items-center py-4'>
-                                            <div className='text-start'>
+                                        <div className='d-block d-md-flex align-items-center py-4'>
+                                            <div className=''>
                                                 <h4 className='fw-bold'>Bigoli con l’arna
                                                 </h4>
                                                 <p className='pera'>Hand / chopped / beef / Tenderloin / Spices </p>
                                             </div>
-                                            <h2 className='ms-auto'><sup>$</sup>9</h2>
+                                            <h2 className='ms-auto ms-md-auto'><sup>$</sup>9</h2>
                                         </div>
-                                        <div className='d-flex align-items-center py-4'>
-                                            <div className='text-start'>
+                                        <div className='d-block d-md-flex align-items-center py-4'>
+                                            <div className=''>
                                                 <h4 className='fw-bold'>Mexican Chayote Soup
                                                 </h4>
                                                 <p className='pera'>Hand / chopped / beef / Tenderloin / Spices</p>
                                             </div>
-                                            <h2 className='ms-auto'><sup>$</sup>14</h2>
+                                            <h2 className='ms-auto ms-md-auto'><sup>$</sup>14</h2>
                                         </div>
-                                        <div className='d-flex align-items-center py-4'>
-                                            <div className='text-start'>
+                                        <div className='d-block d-md-flex align-items-center py-4'>
+                                            <div className=''>
                                                 <h4 className='fw-bold'>Jota or Iota or Jote
                                                 </h4>
                                                 <p className='pera'>Fried / Semolina / flour / Caper / remoulade</p>
                                             </div>
-                                            <h2 className='ms-auto'><sup>$</sup>39</h2>
+                                            <h2 className='ms-auto ms-md-auto'><sup>$</sup>39</h2>
                                         </div>
-                                        <div className='d-flex align-items-center py-4'>
-                                            <div className='text-start'>
+                                        <div className='d-block d-md-flex align-items-center py-4'>
+                                            <div className=''>
                                                 <h4 className='fw-bold'>Gulasch or Goulasch
                                                 </h4>
                                                 <p className='pera'>Caramelized / onions / Beef / broth / Melted / Swiss</p>
                                             </div>
-                                            <h2 className='ms-auto'><sup>$</sup>22</h2>
+                                            <h2 className='ms-auto ms-md-auto'><sup>$</sup>22</h2>
                                         </div>
                                     </div>
                                 </Col>
@@ -493,46 +491,46 @@ export default function home() {
                             </div>
                             <Row className='g-'>
                                 <Col lg={12}>
-                                    <div className='bg-white p-2 p-md-5'>
-                                        <h2 className='display-6 py-3'>Chef’s special</h2>
-                                        <div className='d-flex align-items-center py-4'>
-                                            <div className='text-start'>
+                                    <div className='bg-white p-2 p-md-5 text-center text-md-start'>
+                                        <h2 className='display-6 py-3'>Italian desserts</h2>
+                                        <div className='d-block d-md-flex align-items-center py-4'>
+                                            <div className=''>
                                                 <h4 className='fw-bold'>Charcuterie Platter</h4>
                                                 <p className='pera'>Proscuitto / Cheese / Liver / pate / Olives</p>
                                             </div>
-                                            <h2 className='ms-auto'><sup>$</sup>15</h2>
+                                            <h2 className='ms-auto ms-md-auto'><sup>$</sup>15</h2>
                                         </div>
-                                        <div className='d-flex align-items-center py-4'>
-                                            <div className='text-start'>
+                                        <div className='d-block d-md-flex align-items-center py-4'>
+                                            <div className=''>
                                                 <h4 className='fw-bold'>Bigoli con l’arna
                                                 </h4>
                                                 <p className='pera'>Hand / chopped / beef / Tenderloin / Spices </p>
                                             </div>
-                                            <h2 className='ms-auto'><sup>$</sup>9</h2>
+                                            <h2 className='ms-auto ms-md-auto'><sup>$</sup>9</h2>
                                         </div>
-                                        <div className='d-flex align-items-center py-4'>
-                                            <div className='text-start'>
+                                        <div className='d-block d-md-flex align-items-center py-4'>
+                                            <div className=''>
                                                 <h4 className='fw-bold'>Mexican Chayote Soup
                                                 </h4>
                                                 <p className='pera'>Hand / chopped / beef / Tenderloin / Spices</p>
                                             </div>
-                                            <h2 className='ms-auto'><sup>$</sup>14</h2>
+                                            <h2 className='ms-auto ms-md-auto'><sup>$</sup>14</h2>
                                         </div>
-                                        <div className='d-flex align-items-center py-4'>
-                                            <div className='text-start'>
+                                        <div className='d-block d-md-flex align-items-center py-4'>
+                                            <div className=''>
                                                 <h4 className='fw-bold'>Jota or Iota or Jote
                                                 </h4>
                                                 <p className='pera'>Fried / Semolina / flour / Caper / remoulade</p>
                                             </div>
-                                            <h2 className='ms-auto'><sup>$</sup>39</h2>
+                                            <h2 className='ms-auto ms-md-auto'><sup>$</sup>39</h2>
                                         </div>
-                                        <div className='d-flex align-items-center py-4'>
-                                            <div className='text-start'>
+                                        <div className='d-block d-md-flex align-items-center py-4'>
+                                            <div className=''>
                                                 <h4 className='fw-bold'>Gulasch or Goulasch
                                                 </h4>
                                                 <p className='pera'>Caramelized / onions / Beef / broth / Melted / Swiss</p>
                                             </div>
-                                            <h2 className='ms-auto'><sup>$</sup>22</h2>
+                                            <h2 className='ms-auto ms-md-auto'><sup>$</sup>22</h2>
                                         </div>
                                     </div>
                                 </Col>
@@ -551,25 +549,25 @@ export default function home() {
             <section className='clients p-100'>
                 <Container>
                     <Row className='g-3 justify-content-center'>
-                        <Col lg={3} md={6}>
+                        <Col lg={3} md={6} sm={6}>
                             <div className='text-center'>
                                 <h2 className='fw-bold'>137</h2>
                                 <h5 className='fw-bold'>Satisfied Clients</h5>
                             </div>
                         </Col>
-                        <Col lg={3} md={6}>
+                        <Col lg={3} md={6} sm={6}>
                             <div className='text-center'>
                                 <h2 className='fw-bold'>452</h2>
                                 <h5 className='fw-bold'>Projects Finished</h5>
                             </div>
                         </Col>
-                        <Col lg={3} md={6}>
+                        <Col lg={3} md={6} sm={6}>
                             <div className='text-center'>
                                 <h2 className='fw-bold'>1320</h2>
                                 <h5 className='fw-bold'>Cups of Coffe</h5>
                             </div>
                         </Col>
-                        <Col lg={3} md={6}>
+                        <Col lg={3} md={6} sm={6}>
                             <div className='text-center'>
                                 <h2 className='fw-bold'>1830</h2>
                                 <h5 className='fw-bold'>Projects Finished</h5>
@@ -636,8 +634,8 @@ export default function home() {
                 <Container>
                     <Row className='g-0'>
                         <Col lg={4} md={6}>
-                            <div className='bg-white p-2 p-md-5 text-start'>
-                                <h5 className='display-6 fw-bold py-3'>Contact</h5>
+                            <div className='bg-white p-2 p-md-5 text-center text-md-start'>
+                                <h5 className='display-6 fw-bold py-3 text-dark'>Contact</h5>
                                 <div className='py-3'>
                                     <h6 className='fw-bold'>Address :</h6>
                                     <p className='pera text-dark' style={{ lineHeight: '2' }}>26 Saint George’s Road, <br />

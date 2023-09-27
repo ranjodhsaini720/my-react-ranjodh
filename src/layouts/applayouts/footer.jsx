@@ -11,18 +11,18 @@ import avtarimg5 from "../../assets/image/avatar-6.png"
 export default function footer() {
   return (
     <>
-      <footer className='p-100'>
+      <footer className='p-100 text-center text-md-start'>
         <Container fluid style={{ maxWidth: '1700px' }}>
           <Row className='g-3'>
             <Col lg={3}>
               <div>
                 <h5 className='pb-3'>Customer Service</h5>
                 <ul className='list-unstyled'>
-                  <li className='py-2'>Home</li>
-                  <li className='py-2'>Daily Specials</li>
-                  <li className='py-2'>About Us</li>
-                  <li className='py-2'>Our Menu</li>
-                  <li className='py-2'>Contact Us</li>
+                  <li className='py-2'><a href="#home">Home</a></li>
+                  <li className='py-2'><a href="#chef">Daily Specials</a></li>
+                  <li className='py-2'><a href="#about">About Us</a></li>
+                  <li className='py-2'><a href="#menu">Our Menu</a></li>
+                  <li className='py-2'><a href="#contact">Contact Us</a></li>
                 </ul>
               </div>
             </Col>
@@ -63,7 +63,7 @@ export default function footer() {
                 <p className='pera py-3' style={{ lineHeight: '2' }}>Sign me up to receive emails on new product arrivals,
                   special offers and exclusive events.</p>
                 <hr />
-                <div className='d-flex align-items-center'>
+                <div className='d-flex align-items-center justify-content-center justify-content-md-start'>
                   <p className='m-0 pe-2'>Follow us : </p>
                   <a href="https://www.facebook.com" className='text-white' target='_black'>
                     <i className='bi bi-facebook fs-5 m-1'></i>
